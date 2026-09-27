@@ -1,14 +1,125 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.4">
-  <style type="text/css">
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About · J Cruz Studio</title>
+  <meta name="description" content="Meet Jackie: hairdresser, painter, and the one pair of hands behind J Cruz Studio.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Soft watercolor "paint" that drifts behind everything as you scroll -->
+  <div class="paint" aria-hidden="true">
+    <span class="blob b1" data-wander="0.7"></span>
+    <span class="blob b2" data-wander="2.1"></span>
+    <span class="blob b3" data-wander="3.5"></span>
+    <span class="blob b4" data-wander="4.9"></span>
+  </div>
+
+  <header class="nav">
+    <a href="index.html" class="logo">J Cruz <span>Studio</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="mission.html">Mission</a>
+      <a href="services.html">Services</a>
+      <a href="about.html" aria-current="page">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn btn-small">Book</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h1 class="page-title">
+            <span class="word">Meet</span>
+            <em class="word">Jackie.</em>
+          </h1>
+
+        </div>
+        <figure class="piece ">
+          <!-- TODO: painting title, medium/size and blurb are placeholders -->
+          <div class="art art-3"></div>
+          <figcaption>
+            <span class="piece-title">Self Portrait in Pink</span>
+            <span class="piece-meta">Acrylic on canvas · 24 × 36 in</span>
+            <p class="piece-blurb">To be updated.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ========== STORY ========== -->
+    <section class="section story">
+      <div class="container about-grid">
+        <div class="portrait-wrap reveal">
+          <!-- Add her photo as images/portrait.jpg -->
+          <div class="portrait art art-portrait"></div>
+        </div>
+        <div class="story-copy">
+          <h2 class="section-title reveal">My <em>story.</em></h2>
+          <p class="reveal">I was born and raised right here in Williamsburg, back when it wasn't very pretty. Growing up here teaches you that you can survive just about anything, and twenty years later, I'm back home.</p>
+          <p class="reveal">That resilience carried me through the hardest chapter of my life. I went through breast cancer twice, and it changed everything. I lost a part of myself, but it made me dig deep and find another part of myself.</p>
+          <p class="reveal">Afterward, I rented this space for an art event and had a quick vision that it could be a salon, a studio, a place for art. I never thought it would actually happen, and now I've celebrated two years here.</p>
+          <p class="reveal">This studio has become a place of healing for me. The more I surround myself with clean products and these ideas, the more I live them, so when you come see me, you'll know I'm walking my walk, not just talking it. And it isn't just for me. Everyone who comes through here is looking for beauty wellness in some shape or form.</p>
+          <p class="reveal">This is just step one, stage one, season one of a bigger vision for this studio and my art.</p>
+
+        
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== STATEMENT ========== -->
+    <section class="section quote-section">
+      <div class="container">
+        <p class="quote reveal">Part of my journey is to help other survivors. Once you go through it, something else <em>blossoms,</em> and you share that with the world.</p>
+      </div>
+    </section>
+
+    <!-- ========== THE PAINTER: art strip that slides as you scroll ========== -->
+    <section class="section painter">
+      <div class="container">
+        <p class="eyebrow reveal">The painter</p>
+        <h2 class="section-title reveal">Colors, colors, <em>and more colors.</em></h2>
+        <p class="lead reveal">If it's not on the hair, it's on the canvas. Painting releases something for me; it's part of what has healed my spirit and my soul. Whether I'm mixing color for a client or bringing a canvas to life, it's the discovery I love. I always say the artist finds the canvas, but the canvas ends up finding the artist.</p>
+      </div>
+
+      <div class="art-strip" data-drift="-0.5">
+        <div class="art art-1"></div>
+        <div class="art art-2"></div>
+        <div class="art art-3"></div>
+        <div class="art art-4"></div>
+        <div class="art art-5"></div>
+        <div class="art art-6"></div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <div class="container">
+        <h2 class="contact-title reveal">Take <em>an hour</em> for yourself.</h2>
+        <div class="hero-cta center reveal">
+          <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn">Book on Booksy</a>
+          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links"><a href="mission.html">Mission</a> <a href="services.html">Services</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></nav>
+    <p>© <span data-year></span> J Cruz Studio · Beauty is wellness.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

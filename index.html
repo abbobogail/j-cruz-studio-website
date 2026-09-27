@@ -1,11 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J Cruz Studio · Beauty is Wellness</title>
+  <meta name="description" content="J Cruz Studio is a one-woman studio built on one belief: beauty is wellness. Color, cut, and care, one client at a time.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello!</h1>
-  <p>This is my website.</p>
+
+  <!-- Soft watercolor "paint" that drifts behind everything as you scroll -->
+  <div class="paint" aria-hidden="true">
+    <span class="blob b1" data-wander="0"></span>
+    <span class="blob b2" data-wander="1.4"></span>
+    <span class="blob b3" data-wander="2.8"></span>
+    <span class="blob b4" data-wander="4.2"></span>
+  </div>
+
+  <header class="nav">
+    <a href="index.html" class="logo">J Cruz <span>Studio</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="mission.html">Mission</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn btn-small">Book</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <!-- Floating paintings. Drop her art into /images as art-1.jpg ... art-6.jpg -->
+      <div class="hero-art art art-1 ha1" data-speed="-0.25"></div>
+      <div class="hero-art art art-2 ha2" data-speed="-0.4"></div>
+      <div class="hero-art art art-3 ha3" data-speed="-0.15"></div>
+      <div class="hero-art art art-4 ha4" data-speed="-0.35"></div>
+
+      <div class="hero-inner">
+        <p class="eyebrow">A one-woman studio</p>
+        <h1 class="hero-title">
+          <span class="word">Beauty</span>
+          <em class="word">is</em>
+          <span class="word">wellness.</span>
+        </h1>
+        <p class="hero-sub">Not beauty <i>and</i> wellness. Beauty, wellness: your spirit, inside and out, cared for as one.</p>
+        <div class="hero-cta">
+          <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn">Book a visit</a>
+          <a href="#gallery" class="btn btn-ghost">Step inside</a>
+        </div>
+      </div>
+
+      <a href="#gallery" class="scroll-cue" aria-label="Scroll down"><span></span></a>
+    </section>
+
+    <!-- ========== GALLERY: each painting opens a page ========== -->
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <p class="eyebrow reveal">Original paintings by J Cruz</p>
+        <h2 class="section-title reveal">Step inside <em>the work.</em></h2>
+        <p class="lead reveal">Every piece on these walls was painted by hand, just like every color mixed in the chair. Choose one to wander in.</p>
+
+        <div class="frames">
+          <a href="mission.html" class="frame reveal">
+            <div class="art art-1"></div>
+            <span class="frame-label"><span>01</span><strong>The Mission</strong></span>
+          </a>
+          <a href="services.html" class="frame reveal">
+            <div class="art art-2"></div>
+            <span class="frame-label"><span>02</span><strong>Services</strong></span>
+          </a>
+          <a href="about.html" class="frame reveal">
+            <div class="art art-3"></div>
+            <span class="frame-label"><span>03</span><strong>About J</strong></span>
+          </a>
+          <a href="contact.html" class="frame reveal">
+            <div class="art art-4"></div>
+            <span class="frame-label"><span>04</span><strong>Visit</strong></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section cta">
+      <div class="container">
+        <h2 class="contact-title reveal">Take <em>an hour</em> for yourself.</h2>
+        <div class="hero-cta center reveal">
+          <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn">Book on Booksy</a>
+          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links"><a href="mission.html">Mission</a> <a href="services.html">Services</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></nav>
+    <p>© <span data-year></span> J Cruz Studio · Beauty is wellness.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

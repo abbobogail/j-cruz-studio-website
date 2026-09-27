@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Mission · J Cruz Studio</title>
+  <meta name="description" content="Beauty wellness from the heart and through the arts: clean, nontoxic color and a place to let go.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Soft watercolor "paint" that drifts behind everything as you scroll -->
+  <div class="paint" aria-hidden="true">
+    <span class="blob b1" data-wander="0.4"></span>
+    <span class="blob b2" data-wander="1.8"></span>
+    <span class="blob b3" data-wander="3.2"></span>
+    <span class="blob b4" data-wander="4.6"></span>
+  </div>
+
+  <header class="nav">
+    <a href="index.html" class="logo">J Cruz <span>Studio</span></a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links">
+      <a href="mission.html" aria-current="page">Mission</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn btn-small">Book</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <p class="eyebrow">The Mission</p>
+          <h1 class="page-title">
+            <span class="word">Beauty</span>
+            <em class="word">is</em>
+            <span class="word">wellness.</span>
+          </h1>
+
+          <p class="hero-sub left">Beauty wellness from the heart, and literally through the arts.</p>
+        </div>
+        <figure class="piece ">
+          <!-- TODO: painting title, medium/size and blurb are placeholders -->
+          <div class="art art-1"></div>
+          <figcaption>
+            <span class="piece-title">Still Water</span>
+            <span class="piece-meta">Acrylic on canvas · 18 × 24 in</span>
+            <p class="piece-blurb">To be updated.</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section mission">
+      <div class="container">
+        <p class="eyebrow reveal">What beauty wellness means</p>
+        <!-- Words light up one by one as you scroll -->
+        <p class="mission-statement" data-words>
+          Beauty wellness is the whole of you: your spirit, your exterior, your interior, together. It means going nontoxic, as clean as possible, with color that complements you and products that do right by you for the long term.
+        </p>
+
+        <div class="pillars">
+          <div class="pillar reveal">
+            <span class="num">i.</span>
+            <h3>Clean</h3>
+            <p>All products used are non-toxic, vegan, and ammonia-free. Every ingredient is read and chosen for how it treats you today and for years to come.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="num">ii.</span>
+            <h3>Release</h3>
+            <p>The moment you walk in, you can release and let go. For the hour or so you're here, the outside world goes quiet.</p>
+          </div>
+          <div class="pillar reveal">
+            <span class="num">iii.</span>
+            <h3>Real</h3>
+            <p>You leave feeling released and recharged, with a beauty that doesn't feel fake, just color and care that bring out who you already are.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section mission-arts">
+      <div class="container">
+        <p class="eyebrow reveal">Through the arts</p>
+        <h2 class="section-title reveal">Color, on hair, <em>skin, and canvas.</em></h2>
+        <p class="lead reveal">Hair color, permanent makeup, restorative areola tattooing, and painting all come from the same place: a studio where you become well again, in the most organic way possible.</p>
+        <a href="services.html" class="text-link reveal">Explore services &amp; book <span>→</span></a>
+      </div>
+    </section>
+
+    <!-- Words that drift sideways as you scroll -->
+    <div class="drift-band" aria-hidden="true">
+      <div class="drift" data-drift="-0.6">
+        clean <i>·</i> release <i>·</i> color <i>·</i> heart <i>·</i> art <i>·</i> home <i>·</i>
+        clean <i>·</i> release <i>·</i> color <i>·</i> heart <i>·</i> art <i>·</i> home <i>·</i>
+      </div>
+    </div>
+
+    <section class="section cta">
+      <div class="container">
+        <h2 class="contact-title reveal">Come <em>as you are.</em></h2>
+        <div class="hero-cta center reveal">
+          <a href="https://booksy.com/en-us/1293457_jcruz-studio_hair-salon_29902_brooklyn" target="_blank" rel="noopener" class="btn">Book on Booksy</a>
+          <a href="contact.html" class="btn btn-ghost">Get in touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav class="footer-links"><a href="mission.html">Mission</a> <a href="services.html">Services</a> <a href="about.html">About</a> <a href="contact.html">Contact</a></nav>
+    <p>© <span data-year></span> J Cruz Studio · Beauty is wellness.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
