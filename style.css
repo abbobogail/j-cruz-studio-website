@@ -1,0 +1,11 @@
+body {
+  background-color: lavender;
+  font-family: Arial, sans-serif;
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+}
+
+nav a {
+  margin-right: 20px;
+}
