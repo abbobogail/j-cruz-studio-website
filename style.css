@@ -319,13 +319,25 @@ body::after {
 .ha4 { width: clamp(110px, 14vw, 200px); aspect-ratio: 3/4; bottom: 11%; right: 12%; animation-delay: 1s; }
 @keyframes fadeIn { to { opacity: 1; } }
 
+/* Phones: paintings sit in a tidy row under the headline, fully on screen */
 @media (max-width: 700px) {
-  .hero-art { animation-name: fadeInSoft; }
-  .ha1 { top: 9%; left: -6%; }
-  .ha2 { top: 10%; right: -4%; }
-  .ha3, .ha4 { display: none; }
+  .hero {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    align-content: center;
+    align-items: start;
+    padding: 110px 20px 100px;
+  }
+  .hero-inner { grid-column: 1 / -1; order: -1; margin-bottom: 40px; }
+  .hero-art {
+    position: static;
+    width: 100%;
+    aspect-ratio: 3/4;
+    translate: none !important;
+  }
+  .ha2 { margin-top: 22px; }
+  .ha4 { margin-top: 22px; }
 }
-@keyframes fadeInSoft { to { opacity: .55; } }
 
 .scroll-cue {
   position: absolute;
